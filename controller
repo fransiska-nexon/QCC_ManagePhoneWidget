@@ -1,0 +1,10 @@
+({
+    onClientEvent: function (component, message, helper) {
+        var eventData = message.getParams();
+        if (eventData) {
+            var message = JSON.stringify(eventData);
+            helper.outputToConsole(component, message);
+        }
+    },
+  
+})
